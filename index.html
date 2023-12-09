@@ -12,22 +12,27 @@
     <div class="navbar">
       <ul class="nav-links">
         <li>
-          <a>Simple Flipper</a>
+          <a href="index.html">Simple colors</a>
         </li>
         <li>
-          <a>Hex Colors</a>
+          <a href="./pages//hex.html">Hex colors</a>
         </li>
       </ul>
     </div>
   </nav>
   <main>
     <h1>Color Flipper</h1>
-    <div class="background">
+    <div id="lineBackground" class="background">
       <div class="circle">
-        <h2>Click on the color button and watch me!</h2>
+        <h2 class="selected-color">Click on the color button and watch me!</h2>
       </div>
     </div>
+    <div class="select-color">
+      <h3>The selected color is <span id="color-name" class="selected-color"></span></h3>
+      <button id="btn">Click here to change</button>
+      <button id="apply-btn">Apply this color to page style!</button>
+    </div>
   </main>
-  <script src="./scripts/script.js"></script>
+  <script type='module' src="./scripts/script.js"></script>
 </body>
 </html>
