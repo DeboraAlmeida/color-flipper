@@ -1,5 +1,7 @@
 import color from '../assets/colors.json' assert { type: 'json' };
 
+// let textColor = 'blueviolet - #8A2BE2'
+
 const btn = document.getElementById('btn')
 const applyBtn = document.getElementById('apply-btn')
 const selectedColor = document.querySelector('.selected-color')
@@ -7,6 +9,9 @@ const colorName = document.getElementById('color-name')
 const lineBackground = document.querySelector('#lineBackground')
 const anchor = document.querySelectorAll('a')
 const buttons = document.querySelectorAll('button')
+const nav = document.querySelector('.navbar')
+
+colorName.innerHTML = 'blueviolet - #8A2BE2'
 
 const generateNumber = () => {
   const number = parseInt(Math.random() * color.colors.length)
@@ -28,6 +33,7 @@ const keepColor = () => {
     border-color: ${getColor};
     background: color-mix(in srgb, ${getColor} 25%, transparent);
   `)
+  nav.style.cssText = `border-bottom: 1px solid ${getColor};`
   
 }
 
