@@ -1,7 +1,5 @@
 import color from '../assets/colors.json' assert { type: 'json' };
 
-// let textColor = 'blueviolet - #8A2BE2'
-
 const btn = document.getElementById('btn')
 const applyBtn = document.getElementById('apply-btn')
 const selectedColor = document.querySelector('.selected-color')
